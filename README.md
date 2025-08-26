@@ -350,7 +350,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 
 
 <h3>김두현</h3>
-<p>
+<p>이론으로 배우던 내용을 실제로 구현하기 위한 시도에 의미를 둠. 체계적인 설계 필요성을 체감함.
 </p>
 <br>
 
@@ -368,6 +368,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 <h3>오현영</h3>
 <p>프로젝트를 진행하면서 LLM과 LangChain을 직접 활용해볼 수 있어 의미 있는 경험이었습니다. 다만, 짧은 기간으로 인해 프론트엔드와 백엔드를 완전히 연동하지 못한 점은 아쉬움으로 남습니다.</p>
 <br>
+
 
 
 
