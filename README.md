@@ -54,7 +54,7 @@
       <td> Face++ 안면 인식 및 API 연동<br>LLM<br> AI 챗봇(TTS, STT, ChatGPT API 활용, 대화 로직 설계) </td>
     </tr>
     <tr>
-      <td><a href="https://github.com/YuSangBeom" target="_blank">
+      <td><a href="https://github.com/kgh2895" target="_blank">
           <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
         </a></td>
       <td><a href="https://github.com/isak-kang" target="_blank">
@@ -688,6 +688,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
