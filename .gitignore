@@ -1,12 +1,41 @@
-## cache
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
 
-__pycache__
-*__pycache__
+# Build outputs
+.next/
+dist/
+build/
 
-
-## 환경 변수
-
+# Environment variables
 .env
+.env.local
 
-## 데이터 
-_tmp
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary folders
+tmp/
+temp/
