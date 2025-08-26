@@ -41,7 +41,7 @@
       <td><img src="https://pbs.twimg.com/media/E4VZkLvVgAQC5GU.jpg" style="width:150px; height:auto;" alt="김근호"></td>
       <td><img src="https://upload3.inven.co.kr/upload/2023/12/17/bbs/i15552721117.jpg" style="width:150px; height:auto;" alt="김동은"></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW3TaT-mMeBtq8Lg4v0xeqEa7jj0Vf9RBPg&s" style="width:150px; height:auto;" alt="김두현"></td>
-      <td><img src="[https://cdn.ppomppu.co.kr/zboard/data3/2022/0509/20220509173224_d9N4ZGtBVR.jpeg]" style="width:150px; height:auto;" alt="김민지"></td>
+      <td><img src="https://cdn.ppomppu.co.kr/zboard/data3/2022/0509/20220509173224_d9N4ZGtBVR.jpeg" style="width:150px; height:auto;" alt="김민지"></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpP7-Z-u3mQZnX2RveC1-VGmAhwc5ASjDeIa7sOkqwHH0rQlTjthqCuaI58uZ8Ip2B&usqp=CAU" style="width:150px; height:auto;" alt="오현영"></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpP7-Z-u3mQZnX2RveC1-VGmAhwc5ASjDeIa7sOkqwHH0rQlTjthqCuaI58uZ8Ip2B&usqp=CAU" style="width:150px; height:auto;" alt="전지성"></td>
     </tr>
@@ -683,6 +683,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
