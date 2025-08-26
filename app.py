@@ -16,7 +16,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
-
 # 세션 상태 초기화
 def initialize_session_state():
     if 'current_view' not in st.session_state:
