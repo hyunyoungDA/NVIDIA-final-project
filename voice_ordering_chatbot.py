@@ -50,11 +50,14 @@ def get_langchain_response(user_message, conversation_history):
     메뉴 정보:
     {menu_data}
     대화 규칙:
-    1. 고객이 특정 메뉴를 묻거나 보길 원하면 JSON 형식으로 응답하세요: {{"action": "show_menu", "category": "메뉴의 상위 카테고리(메인, 사이드, 음료, 디저트)"}}
+    1. **메뉴 추천 (알레르기 포함):** 고객이 특정 알레르기(예: '달걀', '밀', '대두','우유','토마토','새우','조개류','돼지고기')에 대해 언급하면, 해당 알레르기 성분이 포함되지 않은 메뉴를 추천하고 일반 텍스트로 응답하세요. 추천할 메뉴가 없으면 정중하게 알려주세요.
+    2.**메뉴 보기:** 고객이 특정 메뉴를 보길 원하면 JSON 형식으로 응답하세요: {{"action": "show_menu", "category": "메뉴의 상위 카테고리(메인, 사이드, 음료, 디저트)"}} 
     예시) "버거 보여줘": {{"action": "show_menu", "category": "메인"}}
-    2. 고객이 메뉴를 주문하면 JSON 형식으로 응답하세요: {{"action": "add_to_cart", "items": [{{"name": "메뉴명", "quantity": 수량, "item_id": "item_xxx"}}]}}
-    3. 고객이 주문 완료나 결제 의사를 표현하면: {{"action": "proceed_to_payment"}}
-    4. 일반 대화나 메뉴 추천, 기타 질문에는 일반 텍스트로 응답하세요.
+         "사이드 보여줘": {{"action": "show_menu", "category": "사이드"}}
+    3. **가격 정보:** 고객이 특정 메뉴의 가격이나 가장 비싼/저렴한 메뉴를 물어보면, 메뉴 데이터에 기반하여 정확한 가격 정보와 함께 일반 텍스트로 응답하세요.
+    4. **주문:** 고객이 메뉴를 주문하면 JSON 형식으로 응답하세요: {{"action": "add_to_cart", "items": [{{"name": "메뉴명", "quantity": 수량, "item_id": "item_xxx"}}]}}
+    5. **결제:** 고객이 주문 완료나 결제 의사를 표현하면: {{"action": "proceed_to_payment"}}
+    6. **기타 질문:** 위 규칙에 해당하지 않는 일반 대화나 질문에는 일반 텍스트로 응답하세요.
     """
     human_template = "현재 대화 내역: {chat_history}\n고객: {user_input}"
     
@@ -211,11 +214,20 @@ def display_menu_page():
         st.subheader(f"✨ {selected_category} 메뉴")
         for index, item in filtered_df.iterrows():
             with st.container(border=True):
-                col1, col2 = st.columns([3, 1])
+                col1, col2, col3 = st.columns([1, 2, 1])
                 with col1:
+                    # 이미지 표시
+                    if 'image' in item and item['image']:
+                        try:
+                            st.image(item['image'], width=120)
+                        except:
+                            st.write("이미지 없음")
+                    else:
+                        st.write("이미지 없음")
+                with col2:
                     st.markdown(f"### **{item['name']}**")
                     st.markdown(f"가격: **{item['price']:,}원**")
-                with col2:
+                with col3:
                     st.markdown(" ")
                     if st.button("주문하기", key=f"order_{item['id']}"):
                         add_to_cart_from_button(item['name'], 1)
