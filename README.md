@@ -467,6 +467,11 @@ OPENAI_API_KEY=your_openai_api_key_here
 run_all.bat
 ```
 
+**macOS/Linux에서 한 번에 모든 앱 실행:**
+```bash
+./run_all.sh
+```
+
 이 명령어를 실행하면:
 - **얼굴 인식 앱 (포트 8501)**: 포어그라운드에서 실행되며 브라우저가 자동으로 열림
 - **일반 키오스크 (포트 8502)**: 백그라운드에서 실행 (브라우저 자동 열림 없음)
@@ -683,6 +688,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
