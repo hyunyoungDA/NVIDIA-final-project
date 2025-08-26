@@ -70,6 +70,9 @@
       <td><a href="https://github.com/yoda2194" target="_blank">
           <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
         </a></td>
+      <td><a href="https://github.com/yoda2194" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
+        </a></td>
     </tr>
   </tbody>
 </table>
