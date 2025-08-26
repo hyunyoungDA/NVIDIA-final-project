@@ -53,26 +53,6 @@
       <td>Streamlit 연계<br>Face++ 안면 인식 및 API 연동<br>AI 챗봇(TTS, STT, ChatGPT API 활용, 대화 로직 설계)</td>
       <td> Face++ 안면 인식 및 API 연동<br>LLM<br> AI 챗봇(TTS, STT, ChatGPT API 활용, 대화 로직 설계) </td>
     </tr>
-    <tr>
-      <td><a href="https://github.com/kgh2895" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
-        </a></td>
-      <td><a href="https://github.com/eungDong" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
-        </a></td>
-      <td><a href="https://github.com/Ecce Homo" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
-        </a></td>
-      <td><a href="https://github.com/mingg-00" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
-        </a></td>
-      <td><a href="https://github.com/hyunyoungDA" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
-        </a></td>
-      <td><a href="https://github.com/jeonjiseong" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-Link-black?style=flat&logo=github&logoColor=white" />
-        </a></td>
-    </tr>
   </tbody>
 </table>
 <br>
@@ -344,40 +324,16 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 <details>
   <summary>프로젝트 기획서</summary>
 
-[프로젝트 기획안](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/1.%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%ED%9A%8D%EC%95%88.docx)
+[프로젝트 기획서](https://docs.google.com/document/u/0/d/141WTWrIFNWBlmL4gye8GBaf0HH_jcUm9/mobilebasic)
 
 </details>
 
 <details>
-  <summary>발표 자료</summary>
+  <summary>다이어그램</summary>
 
-[요구사항 정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/2.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.docx)
-
-</details>
-
-<details>
-  <summary>프로젝트 보고서</summary>
-
-[WBS](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/3.%20WBS%20.xlsx)
-![image](https://github.com/user-attachments/assets/a18d61b7-0633-4731-882a-0be128a50070)
+[다이어그램](https://www.figma.com/board/UiRCwopjZsegjCxDTL4PUR/UML-diagram--복사-?node-id=0-1&t=3W1oGSX6Rku2b1Y4-1)
 
 </details>
-
-
-### 보조 문서
-
-
-<details>
-  <summary>메뉴 구조도</summary>
-
-[메뉴 구조도](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%EB%B3%B4%EC%A1%B0)/%EB%A9%94%EB%89%B4%20%EA%B5%AC%EC%A1%B0%EB%8F%84.xlsx)
-
-![image](https://github.com/user-attachments/assets/2d50c927-b192-4e89-b8e5-6abb158410d4)
-![image](https://github.com/user-attachments/assets/3fad068e-0a22-4336-b01f-63516a32c1de)
-![image](https://github.com/user-attachments/assets/5c1ea7d5-2532-476c-92c5-8795c59e68ae)
-
-</details>
-
 
 <br>
 
@@ -441,6 +397,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 <h3>오현영</h3>
 <p>프로젝트를 진행하면서 LLM과 LangChain을 직접 활용해볼 수 있어 의미 있는 경험이었습니다. 다만, 짧은 기간으로 인해 프론트엔드와 백엔드를 완전히 연동하지 못한 점은 아쉬움으로 남습니다.</p>
 <br>
+
 
 
 
