@@ -43,7 +43,7 @@ def get_langchain_response(user_message, conversation_history):
     if not api_key:
         return "OpenAI API 키가 설정되지 않았습니다. .env 파일에 OPENAI_API_KEY를 설정해주세요."
 
-    llm = ChatOpenAI(api_key=api_key, model="gpt-3.5-turbo", temperature=0.7)
+    llm = ChatOpenAI(api_key=api_key, model="gpt-4.1-mini", temperature=0.7)
             
     system_template = """
     당신은 한국의 키오스크 주문 도우미입니다. 고객의 주문을 도와주고 친근하게 대화하세요.
