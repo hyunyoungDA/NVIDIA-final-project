@@ -173,19 +173,13 @@
   <summary>문제 인식 및 원인</summary>
   
   1. 55세 이상 과반수 “키오스크 이용 불편”… “글씨 작고 조작 어려워” 출처 : 법조신문(https://news.koreanbar.or.kr)<br>
-  ![image](https://github.com/user-attachments/assets/57fc0e6b-6cfa-4f82-a93b-72ef30ddc1da)
+  ![image](https://github.com/user-attachments/assets/d0d10e04-876a-4c1b-9141-d7776f9c6616)
 
-  2. 청년층 금융 교육의 수요증가<br>
-  ![image](https://github.com/user-attachments/assets/1f6149e4-cf54-43f9-8f0e-7fa4089ae40f)
+  2. 소비자 46.6% 키오스크 이용 중 불편·피해 경험있어요<br>
+  ![image](https://github.com/user-attachments/assets/6181873b-7c63-431d-a248-bd94fbd3ffff)
 
   3. 2030의 내 집 마련 관심 증가<br>
   ![image](https://github.com/user-attachments/assets/6dadad27-cb84-42a9-98db-57d6200337df)
-
-  4. 자신의 청약 가점을 제대로 모르고 잘못 측정<br>
-  ![image](https://github.com/user-attachments/assets/92e7371a-44bd-4a0d-bb71-07039f1e1d0d)
-
-  5. 진입 장벽이 높은 청약<br>
-  ![image](https://github.com/user-attachments/assets/6eae09f4-38d9-4ad7-87c9-939c9b71014d)
 
 </details>
 <details>
@@ -631,6 +625,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
