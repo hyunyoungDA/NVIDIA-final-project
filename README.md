@@ -10,16 +10,16 @@
   - 65세 미만: 지정된 웹사이트로 자동 이동
   - 65세 이상: "먹고 가기" 또는 "포장" 선택 화면
 - **실시간 진행률 표시**: 인식 과정을 시각적으로 확인
+- **직접 Face++ API 호출**: 별도 API 서버 없이 스트림릿에서 직접 실행
 
 ## 📋 사용 방법
 
 1. **환경 변수 설정** (아래 설정 섹션 참조)
 2. **의존성 설치**
-3. **Next.js API 서버 실행**
-4. **스트림릿 앱 실행**
-5. **카메라 앞에서 3초간 얼굴을 보여주기**
-6. **AI가 자동으로 나이를 인식**
-7. **나이에 따라 자동으로 다음 단계로 이동**
+3. **스트림릿 앱 실행**
+4. **카메라 앞에서 3초간 얼굴을 보여주기**
+5. **AI가 자동으로 나이를 인식**
+6. **나이에 따라 자동으로 다음 단계로 이동**
 
 ## 🛠️ 설치 및 실행
 
@@ -31,9 +31,6 @@
 # Face++ API 설정
 FACE_API_KEY=your_actual_api_key_here
 FACE_API_SECRET=your_actual_api_secret_here
-
-# API 엔드포인트
-API_ENDPOINT=http://localhost:3001/api/face
 
 # 타겟 URL
 TARGET_URL=https://www.naver.com
@@ -47,19 +44,11 @@ TARGET_URL=https://www.naver.com
 ### 2. 의존성 설치
 
 ```bash
-# Python 의존성
+# Python 의존성만 설치 (Node.js 불필요)
 pip install -r requirements.txt
-
-# Node.js 의존성
-npm install
 ```
 
-### 3. Next.js API 서버 실행
-```bash
-npm run dev -- -p 3001
-```
-
-### 4. 스트림릿 앱 실행
+### 3. 스트림릿 앱 실행
 ```bash
 streamlit run streamlit_app.py
 ```
@@ -68,13 +57,12 @@ streamlit run streamlit_app.py
 
 - **FACE_API_KEY**: Face++ API 키 (필수)
 - **FACE_API_SECRET**: Face++ API 시크릿 (필수)
-- **API_ENDPOINT**: Face++ API 엔드포인트 (기본값: http://localhost:3001/api/face)
 - **TARGET_URL**: 65세 미만 사용자가 이동할 웹사이트 URL
 
 ## 📱 화면 구성
 
 ### 메인 화면
-- 사용 방법 안내
+- Face++ API 연결 상태 확인
 - 자동 시작
 
 ### 인식 화면
@@ -92,8 +80,7 @@ streamlit run streamlit_app.py
 
 - **Frontend**: Streamlit
 - **Computer Vision**: OpenCV
-- **Face Recognition**: Face++ API
-- **Backend**: Next.js API
+- **Face Recognition**: Face++ API (직접 호출)
 - **Image Processing**: PIL, NumPy
 - **Environment**: python-dotenv
 
@@ -103,9 +90,11 @@ streamlit run streamlit_app.py
 - 인터넷 연결이 필요합니다 (Face++ API 사용)
 - Face++ API 사용량 제한이 있을 수 있습니다
 - **API 키는 절대 공개 저장소에 업로드하지 마세요**
+- **별도의 API 서버가 필요하지 않습니다**
 
 ## 🔄 업데이트 내역
 
 - v1.0: 기본 얼굴 인식 기능
 - v2.0: 3초 실시간 인식 및 자동 라우팅 기능 추가
 - v3.0: 환경 변수 기반 설정 및 보안 강화
+- v4.0: API 서버 제거, 스트림릿에서 직접 Face++ API 호출

@@ -14,9 +14,15 @@ from dotenv import load_dotenv
 # .env 파일 로드
 load_dotenv()
 
-# 환경 변수에서 설정 가져오기
-API_ENDPOINT = os.getenv("API_ENDPOINT", "http://localhost:3001/api/face")
+# 환경 변수에서 Face++ API 설정 가져오기
+FACE_API_KEY = os.getenv("FACE_API_KEY")
+FACE_API_SECRET = os.getenv("FACE_API_SECRET")
 TARGET_URL = os.getenv("TARGET_URL", "https://www.naver.com")
+
+# Face++ API 설정 확인
+if not FACE_API_KEY or not FACE_API_SECRET:
+    st.error("❌ Face++ API 키가 설정되지 않았습니다. .env 파일을 확인하세요.")
+    st.stop()
 
 # 페이지 설정
 st.set_page_config(
@@ -36,6 +42,64 @@ if 'show_result' not in st.session_state:
     st.session_state.show_result = False
 if 'video_frames' not in st.session_state:
     st.session_state.video_frames = []
+
+def call_face_api(image_base64):
+    """Face++ API를 직접 호출하여 나이를 감지하는 함수"""
+    try:
+        # Face++ API URL
+        api_url = 'https://api-us.faceplusplus.com/facepp/v3/detect'
+        
+        # Base64 이미지 데이터 준비 (data:image/jpeg;base64, 부분 제거)
+        image_data = image_base64 if ',' not in image_base64 else image_base64.split(',')[1]
+        
+        # FormData 생성
+        form_data = {
+            'api_key': FACE_API_KEY,
+            'api_secret': FACE_API_SECRET,
+            'image_base64': image_data,
+            'return_attributes': 'age,gender,smiling,headpose,facequality,blur,eyestatus,emotion,ethnicity,beauty,mouthstatus,eyegaze,skinstatus'
+        }
+        
+        # Face++ API 호출
+        response = requests.post(api_url, data=form_data, timeout=10)
+        
+        if response.status_code == 200:
+            data = response.json()
+            
+            # Face++ 응답 처리
+            if data.get("error_message"):
+                st.error(f"Face++ API 오류: {data.get('error_message')}")
+                return None
+            
+            if data.get("faces") and len(data.get("faces", [])) > 0:
+                face = data["faces"][0]
+                attributes = face.get("attributes", {})
+                
+                # 나이 추정
+                age = attributes.get("age", {}).get("value") if attributes.get("age") else None
+                
+                if age is not None:
+                    st.success(f"✅ Face++ API 성공: {age}세 감지됨")
+                    return age
+                else:
+                    st.warning("⚠️ 얼굴은 감지되었지만 나이를 추정할 수 없습니다.")
+                    return None
+            else:
+                st.warning("⚠️ 얼굴이 감지되지 않았습니다.")
+                return None
+        else:
+            st.error(f"Face++ API 요청 실패: {response.status_code}")
+            return None
+            
+    except requests.exceptions.Timeout:
+        st.error("❌ Face++ API 요청 시간 초과")
+        return None
+    except requests.exceptions.RequestException as e:
+        st.error(f"❌ Face++ API 요청 오류: {e}")
+        return None
+    except Exception as e:
+        st.error(f"❌ 예상치 못한 오류: {e}")
+        return None
 
 def capture_video_frames():
     """3초 동안 카메라로 5장의 사진을 캡처하는 함수"""
@@ -91,7 +155,7 @@ def detect_age_from_frames(frames):
     successful_detections = 0
     
     # 5장의 사진을 모두 분석
-    with st.spinner("🔍 AI가 사진에서 나이를 분석하고 있습니다..."):
+    with st.spinner("🔍 AI가 5장의 사진에서 나이를 분석하고 있습니다..."):
         for i, frame in enumerate(frames):
             try:
                 # 이미지 base64 변환
@@ -99,20 +163,15 @@ def detect_age_from_frames(frames):
                 frame.save(buffered, format="JPEG", quality=85)
                 img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
                 
-                # API 요청
-                res = requests.post(API_ENDPOINT, json={"imageBase64": img_str, "frameCount": i}, timeout=10)
+                # Face++ API 직접 호출
+                age = call_face_api(img_str)
                 
-                if res.status_code == 200:
-                    data = res.json()
+                if age is not None:
+                    ages.append(age)
+                    successful_detections += 1
                     
-                    if data.get("face_detected") and data.get("age") is not None:
-                        age = data.get("age")
-                        ages.append(age)
-                        successful_detections += 1
-                else:
-                    continue
-                    
-            except:
+            except Exception as e:
+                st.error(f"프레임 {i+1} 처리 오류: {e}")
                 continue
     
     # 결과 반환
@@ -126,16 +185,9 @@ def main():
     st.title("👴 AI 얼굴 나이 인식 키오스크")
     st.markdown("---")
     
-    # API 서버 상태 확인
-    try:
-        test_response = requests.get(API_ENDPOINT.replace("/api/face", ""), timeout=5)
-        if test_response.status_code == 200:
-            pass  # 성공 시 아무것도 하지 않음
-        else:
-            st.warning(f"⚠️ API 서버 응답: {test_response.status_code}")
-    except:
-        st.error("❌ Next.js API 서버에 연결할 수 없습니다. 'npm run dev'를 실행하세요.")
-        st.stop()
+    # Face++ API 설정 상태 확인
+    st.success(f"✅ Face++ API 연결 준비 완료")
+    st.info(f"🔑 API 키: {FACE_API_KEY[:8]}...")
     
     # 자동으로 얼굴 인식 시작
     if not st.session_state.detection_started:
@@ -144,7 +196,7 @@ def main():
     # 나이 인식 진행 중
     if not st.session_state.detection_complete:
         st.subheader("🔍 실시간 얼굴 인식")
-        st.info("카메라가 나이 인식을 위해 사진을 촬영합니다.")
+        st.info("카메라 앞에서 3초간 5장의 사진을 촬영합니다.")
         
         # 바로 촬영 시작
         frames = capture_video_frames()
@@ -153,7 +205,7 @@ def main():
         if frames:
             # 5장의 사진 중 첫 번째 사진만 표시
             st.success(f"✅ 사진 촬영 완료!")
-            st.image(frames[2], caption="촬영된 사진", use_column_width=True)
+            st.image(frames[0], caption="촬영된 사진", use_column_width=True)
             
             # 나이 인식
             age = detect_age_from_frames(frames)
@@ -185,6 +237,8 @@ def main():
             # 자동 URL 이동
             col1, col2, col3 = st.columns([1, 2, 1])
             with col2:
+                st.markdown(f"**이동할 URL:** {TARGET_URL}")
+                
                 # 3초 후 자동으로 웹사이트 열기
                 time.sleep(3)
                 webbrowser.open(TARGET_URL)
