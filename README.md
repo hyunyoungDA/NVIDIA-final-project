@@ -178,8 +178,8 @@
   2. 소비자 46.6% 키오스크 이용 중 불편·피해 경험있어요<br>
   ![image](https://github.com/user-attachments/assets/6181873b-7c63-431d-a248-bd94fbd3ffff)
 
-  3. 2030의 내 집 마련 관심 증가<br>
-  ![image](https://github.com/user-attachments/assets/6dadad27-cb84-42a9-98db-57d6200337df)
+  3. 보기만 해도 어려운 키오스크...<br>
+  ![image](https://github.com/user-attachments/assets/5ea80032-c272-4a02-8625-9fe723efcd61)
 
 </details>
 <details>
@@ -625,6 +625,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
