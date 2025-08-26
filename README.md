@@ -269,29 +269,29 @@
 <details>
   <summary>프로젝트 기획안</summary>
 
-[프로젝트 기획안](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/1.%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%ED%9A%8D%EC%95%88.docx)
+[프로젝트 기획서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/1.%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%ED%9A%8D%EC%95%88.docx)
 
 </details>
 
 <details>
-  <summary>요구사항 정의서</summary>
+  <summary>발표 자료</summary>
 
-[요구사항 정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/2.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.docx)
+[발표 자료](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/2.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.docx)
 
 </details>
 
 <details>
-  <summary>WBS</summary>
+  <summary>프로젝트 보고서</summary>
 
-[WBS](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/3.%20WBS%20.xlsx)
+[프로젝트 보고서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/3.%20WBS%20.xlsx)
 ![image](https://github.com/user-attachments/assets/a18d61b7-0633-4731-882a-0be128a50070)
 
 </details>
 
 <details>
-  <summary>모델정의서</summary>
+  <summary>데이터셋 / API</summary>
 
-[모델정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/4.%20%EB%AA%A8%EB%8D%B8%EC%A0%95%EC%9D%98%EC%84%9C.docx)
+[데이터셋 / API](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/4.%20%EB%AA%A8%EB%8D%B8%EC%A0%95%EC%9D%98%EC%84%9C.docx)
 
 </details>
 
