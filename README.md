@@ -41,7 +41,7 @@
       <td><img width="200" height="230" alt="김근호" src="https://github.com/user-attachments/assets/0fea192b-ee4f-4b76-a1a4-84613eede830" /></td>
       <td><img width="200" height="230" alt="김동은" src="https://github.com/user-attachments/assets/126b9c0e-c377-42d7-986a-32e1bbfc5a18" /></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW3TaT-mMeBtq8Lg4v0xeqEa7jj0Vf9RBPg&s" style="width:150px; height:auto;" alt="김두현"></td>
-      <td><img width="299" height="290" alt="Image" src="https://github.com/user-attachments/assets/27d5a45a-7632-462f-9be2-b777ce48b9bb" alt="김민지"></td>
+      <td><img width="200" height="230" alt="김민지" src="https://github.com/user-attachments/assets/a1866fc5-17a3-4383-b422-652b3ce53f00" /></td>
       <td><img width="200" height="230" alt="오현영" src="https://github.com/user-attachments/assets/0cd4cc28-a4c2-4cb4-83ee-196f4421f31d" /></td>
       <td><img width="200" height="230" alt="전지성" src="https://github.com/user-attachments/assets/abcb9eda-2f9b-4b3e-a08d-5c50084ee666" /></td>
     </tr>
@@ -674,6 +674,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
