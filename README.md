@@ -253,11 +253,6 @@
 </details>
 
 
-![image](https://github.com/user-attachments/assets/16de09c9-e463-4c19-8501-02b49aa95160)
-![image](https://github.com/user-attachments/assets/ad55dad1-2de6-468e-82a7-34229d1f7a2b)
-![image](https://github.com/user-attachments/assets/44621625-1e04-442f-b2f3-b333a5d07968)
-
-
 ### 보조 문서
 
 
@@ -636,6 +631,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
