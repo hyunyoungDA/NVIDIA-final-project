@@ -70,37 +70,12 @@ async function callFacePlusPlusAPI(imageBase64: string, frameCount: number = 0):
       
       // 나이 추정
       const age = attributes.age ? attributes.age.value : null
+
       
-      // 성별 추정
-      const gender = attributes.gender ? attributes.gender.value : "Unknown"
-      const genderConfidence = attributes.gender ? attributes.gender.confidence : 0
-      
-      // 미소 정도
-      const smiling = attributes.smiling ? attributes.smiling.value : null
-      
-      // 얼굴 품질
-      const faceQuality = attributes.facequality ? attributes.facequality.value : null
-      
-      // 감정
-      const emotion = attributes.emotion ? attributes.emotion : null
-      
-      // 인종
-      const ethnicity = attributes.ethnicity ? attributes.ethnicity.value : null
-      
-      // 아름다움 점수
-      const beauty = attributes.beauty ? attributes.beauty.value : null
-      
-      console.log(`[Face++ API] 성공: ${age}세, ${gender} (${genderConfidence}%), 미소: ${smiling}, 품질: ${faceQuality}`)
+      console.log(`[Face++ API] 성공: ${age}세`)
       
       return {
         age: age,
-        gender: gender,
-        gender_confidence: genderConfidence,
-        smiling: smiling,
-        face_quality: faceQuality,
-        emotion: emotion,
-        ethnicity: ethnicity,
-        beauty: beauty,
         face_detected: true,
         face_count: data.faces.length,
         confidence: "high",

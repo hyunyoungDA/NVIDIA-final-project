@@ -155,7 +155,7 @@ def detect_age_from_frames(frames):
     successful_detections = 0
     
     # 5장의 사진을 모두 분석
-    with st.spinner("🔍 AI가 5장의 사진에서 나이를 분석하고 있습니다..."):
+    with st.spinner("🔍 AI가 사진에서 나이를 분석하고 있습니다..."):
         for i, frame in enumerate(frames):
             try:
                 # 이미지 base64 변환
@@ -185,10 +185,6 @@ def main():
     st.title("👴 AI 얼굴 나이 인식 키오스크")
     st.markdown("---")
     
-    # Face++ API 설정 상태 확인
-    st.success(f"✅ Face++ API 연결 준비 완료")
-    st.info(f"🔑 API 키: {FACE_API_KEY[:8]}...")
-    
     # 자동으로 얼굴 인식 시작
     if not st.session_state.detection_started:
         st.session_state.detection_started = True
@@ -196,7 +192,6 @@ def main():
     # 나이 인식 진행 중
     if not st.session_state.detection_complete:
         st.subheader("🔍 실시간 얼굴 인식")
-        st.info("카메라 앞에서 3초간 5장의 사진을 촬영합니다.")
         
         # 바로 촬영 시작
         frames = capture_video_frames()
@@ -205,7 +200,7 @@ def main():
         if frames:
             # 5장의 사진 중 첫 번째 사진만 표시
             st.success(f"✅ 사진 촬영 완료!")
-            st.image(frames[0], caption="촬영된 사진", use_column_width=True)
+            st.image(frames[2], caption="촬영된 사진", use_column_width=True)
             
             # 나이 인식
             age = detect_age_from_frames(frames)
