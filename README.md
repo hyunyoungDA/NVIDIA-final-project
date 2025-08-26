@@ -7,7 +7,7 @@
 - **3초 실시간 얼굴 인식**: 카메라로 3초간 5장의 사진을 촬영하여 나이를 자동 인식
 - **자동 나이 판단**: 65세 기준으로 자동 분류
 - **스마트 라우팅**: 
-  - 65세 미만: 지정된 웹사이트로 자동 이동
+  - 65세 미만: GitHub normal 브랜치로 자동 이동
   - 65세 이상: "먹고 가기" 또는 "포장" 선택 화면
 - **실시간 진행률 표시**: 인식 과정을 시각적으로 확인
 - **직접 Face++ API 호출**: 별도 API 서버 없이 스트림릿에서 직접 실행
@@ -32,8 +32,8 @@
 FACE_API_KEY=your_actual_api_key_here
 FACE_API_SECRET=your_actual_api_secret_here
 
-# 타겟 URL
-TARGET_URL=https://www.naver.com
+# 타겟 URL (65세 미만 시 이동할 GitHub 브랜치)
+TARGET_URL=https://github.com/hyunyoungDA/NVIDIA-final-project/tree/normal
 ```
 
 **⚠️ 보안 주의사항:**
@@ -57,7 +57,7 @@ streamlit run streamlit_app.py
 
 - **FACE_API_KEY**: Face++ API 키 (필수)
 - **FACE_API_SECRET**: Face++ API 시크릿 (필수)
-- **TARGET_URL**: 65세 미만 사용자가 이동할 웹사이트 URL
+- **TARGET_URL**: 65세 미만 사용자가 이동할 GitHub normal 브랜치
 
 ## 📱 화면 구성
 
@@ -72,7 +72,7 @@ streamlit run streamlit_app.py
 - 인식 상태 표시
 
 ### 결과 화면
-- **65세 미만**: 웹사이트 이동
+- **65세 미만**: GitHub normal 브랜치로 이동
 - **65세 이상**: 먹고 가기/포장 선택 버튼
 - 다시 시작 버튼
 
@@ -98,3 +98,4 @@ streamlit run streamlit_app.py
 - v2.0: 3초 실시간 인식 및 자동 라우팅 기능 추가
 - v3.0: 환경 변수 기반 설정 및 보안 강화
 - v4.0: API 서버 제거, 스트림릿에서 직접 Face++ API 호출
+- v5.0: 65세 미만 시 GitHub normal 브랜치로 자동 이동

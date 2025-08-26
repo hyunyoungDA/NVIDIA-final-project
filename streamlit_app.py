@@ -17,7 +17,8 @@ load_dotenv()
 # 환경 변수에서 Face++ API 설정 가져오기
 FACE_API_KEY = os.getenv("FACE_API_KEY")
 FACE_API_SECRET = os.getenv("FACE_API_SECRET")
-TARGET_URL = os.getenv("TARGET_URL", "https://www.naver.com")
+TARGET_URL1 = os.getenv("TARGET_URL", "http://localhost:8507")
+TARGET_URL2 = os.getenv("TARGET_URL2","http://localhost:8505")
 
 # Face++ API 설정 확인
 if not FACE_API_KEY or not FACE_API_SECRET:
@@ -57,7 +58,7 @@ def call_face_api(image_base64):
             'api_key': FACE_API_KEY,
             'api_secret': FACE_API_SECRET,
             'image_base64': image_data,
-            'return_attributes': 'age,gender,smiling,headpose,facequality,blur,eyestatus,emotion,ethnicity,beauty,mouthstatus,eyegaze,skinstatus'
+            'return_attributes': 'age'
         }
         
         # Face++ API 호출
@@ -232,26 +233,20 @@ def main():
             # 자동 URL 이동
             col1, col2, col3 = st.columns([1, 2, 1])
             with col2:
-                st.markdown(f"**이동할 URL:** {TARGET_URL}")
-                
                 # 3초 후 자동으로 웹사이트 열기
                 time.sleep(3)
-                webbrowser.open(TARGET_URL)
+                webbrowser.open(TARGET_URL1)
                 
         else:
             st.subheader("🍽 65세 이상")
-            st.info(f"추정 나이: {age}세 -> 원하시는 옵션을 선택해주세요.")
+            st.info(f"추정 나이: {age}세 -> 자동으로 다음 페이지로 이동합니다.")
             
-            col1, col2 = st.columns(2)
-            with col1:
-                if st.button("🍽 먹고 가기", use_container_width=True, type="primary"):
-                    st.success("먹고 가기를 선택하셨습니다!")
-                    st.balloons()
-                    
+            # 자동 URL 이동
+            col1, col2, col3 = st.columns([1, 2, 1])
             with col2:
-                if st.button("🥡 포장", use_container_width=True, type="primary"):
-                    st.success("포장을 선택하셨습니다!")
-                    st.balloons()
+                # 3초 후 자동으로 웹사이트 열기
+                time.sleep(3)
+                webbrowser.open(TARGET_URL2)
         
         # 다시 시작하기 버튼 (자동 재시작 제거)
         st.markdown("---")

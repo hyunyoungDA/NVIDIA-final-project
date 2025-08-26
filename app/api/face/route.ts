@@ -90,7 +90,6 @@ async function callFacePlusPlusAPI(imageBase64: string, frameCount: number = 0):
       console.log(`[Face++ API] 얼굴 미검출`)
       return {
         age: null,
-        gender: "Unknown",
         face_detected: false,
         face_count: 0,
         confidence: "low",
@@ -108,7 +107,6 @@ async function callFacePlusPlusAPI(imageBase64: string, frameCount: number = 0):
     // 오류 발생 시 기본값 반환
     return {
       age: null,
-      gender: "Unknown",
       face_detected: false,
       face_count: 0,
       confidence: "error",
