@@ -126,7 +126,7 @@
 <details>
   <summary>개발 목표 및 내용</summary>
   고령층을 포함한 디지털 취약계층을 대상으로 키오스크 음성 보조 챗봇 서비스를 구현하여, 복잡한 청약 제도의 접근성을 향상시키고 효율적인 청약 프로세스를 지원하고자한다. <br>
-  단, 청약 제도의 범위가 방대하고, 청년층의 경우 보통 특별공급 중 생애최초와 신혼부부의 조건에 해당되기 때문에, 이 두 경우만 다룰 예정이다.
+  컴퓨터 비전 기술로 사용자의 연령대를 추정하고, 이를 바탕으로 접근성 향상 기능을 먼저 제안하는 선제적 지원 방식을 도입하여 차별점을 두었습니다.
 </details>
 <details>
   <summary>주요 타겟층</summary>
@@ -231,62 +231,32 @@
 
 ### 필수 문서
 <details>
-  <summary>프로젝트 기획안</summary>
+  <summary>프로젝트 기획서</summary>
 
 [프로젝트 기획안](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/1.%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%ED%9A%8D%EC%95%88.docx)
 
 </details>
 
 <details>
-  <summary>요구사항 정의서</summary>
+  <summary>발표 자료</summary>
 
 [요구사항 정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/2.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.docx)
 
 </details>
 
 <details>
-  <summary>WBS</summary>
+  <summary>프로젝트 보고서</summary>
 
 [WBS](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/3.%20WBS%20.xlsx)
 ![image](https://github.com/user-attachments/assets/a18d61b7-0633-4731-882a-0be128a50070)
 
 </details>
 
-<details>
-  <summary>모델정의서</summary>
-
-[모델정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/4.%20%EB%AA%A8%EB%8D%B8%EC%A0%95%EC%9D%98%EC%84%9C.docx)
-
-</details>
-
-<details>
-  <summary>성능 평가 결과서</summary>
-
-[성능 평가 결과서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/5.%20%EC%84%B1%EB%8A%A5%20%ED%8F%89%EA%B0%80%20%EA%B2%B0%EA%B3%BC%EC%84%9C.pptx)
-
 
 ![image](https://github.com/user-attachments/assets/16de09c9-e463-4c19-8501-02b49aa95160)
 ![image](https://github.com/user-attachments/assets/ad55dad1-2de6-468e-82a7-34229d1f7a2b)
 ![image](https://github.com/user-attachments/assets/44621625-1e04-442f-b2f3-b333a5d07968)
 
-
-
-
-</details>
-
-<details>
-  <summary>최종보고서</summary>
-
-[최종보고서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/6.%20%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C.pptx)
-
-</details>
-
-<details>
-  <summary>발표자료</summary>
-
-[발표자료](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/blob/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/%EC%B5%9C%EC%A2%85-%EB%B0%9C%ED%91%9C-%EC%9E%90%EB%A3%8C.pdf)
-
-</details>
 
 ### 보조 문서
 
@@ -299,14 +269,6 @@
 ![image](https://github.com/user-attachments/assets/2d50c927-b192-4e89-b8e5-6abb158410d4)
 ![image](https://github.com/user-attachments/assets/3fad068e-0a22-4336-b01f-63516a32c1de)
 ![image](https://github.com/user-attachments/assets/5c1ea7d5-2532-476c-92c5-8795c59e68ae)
-
-</details>
-
-<details>
-  <summary>청약 스키마 설계</summary>
-
-![image](https://github.com/user-attachments/assets/a6757cb1-3f64-4e9c-a6ae-88149c79dabe)
-![image](https://github.com/user-attachments/assets/ce2b5e43-5065-410b-8075-d4f12f0f3d13)
 
 </details>
 
@@ -674,6 +636,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
