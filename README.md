@@ -84,6 +84,7 @@
 
 <div> 
   FrontEnd : 
+  
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><br>
   <img src="https://img.shields.io/badge/streamlit-ff4B4B?style=for-the-badge&logo=streamlit&logoColor=white"><br>
   
@@ -670,6 +671,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
