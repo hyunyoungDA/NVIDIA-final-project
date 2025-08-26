@@ -138,8 +138,8 @@
 </details>
 <details> <summary>핵심 기능</summary>
 
-AI 기반 연령 인식 및 선제적 접근성 제공<br>
-웹캠을 통한 컴퓨터 비전으로 사용자의 연령대 추정<br>
+- AI 기반 연령 인식 및 선제적 접근성 제공<br>
+- 웹캠을 통한 컴퓨터 비전으로 사용자의 연령대 추정<br>
 65세 이상 사용자를 위한 '어르신 맞춤 모드' 자동 전환<br>
 확대 글자/이미지, 음성 안내(TTS), 직관적 음성 명령(STT) 제공<br>
 음성 기반 주문 처리 시스템<br>
@@ -488,6 +488,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ### 포트 충돌
 - 다른 포트 사용: `--server.port 8504` 등으로 변경
 - 백그라운드 앱 접속: 브라우저에서 `http://localhost:8502` 또는 `http://localhost:8503` 직접 접속
+
 
 
 
