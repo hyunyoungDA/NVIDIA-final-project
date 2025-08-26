@@ -49,7 +49,7 @@
       <td>서비스 아키텍처 및 일정 관리, 팀 조율<br>일반 모드 Streamlit</td>
       <td>AI 챗봇(TTS, STT, ChatGPT API 활용, 대화 로직 설계)<br>어르신 모드 Streamlit</td>
       <td>서비스 아키텍처 및 일정 관리, 팀 조율<br>발표</td>
-      <td>비전 Streamlit<br>Streamlit 연계</td>
+      <td>Streamlit 연계<br>비전 Streamlit</td>
       <td>Streamlit 연계<br>Face++ 안면 인식 및 API 연동<br>AI 챗봇(TTS, STT, ChatGPT API 활용, 대화 로직 설계)</td>
       <td> Face++ 안면 인식 및 API 연동<br>LLM<br> AI 챗봇(TTS, STT, ChatGPT API 활용, 대화 로직 설계) </td>
     </tr>
@@ -683,6 +683,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
