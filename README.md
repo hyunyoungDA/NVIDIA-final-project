@@ -41,7 +41,7 @@
       <td><img src="https://pbs.twimg.com/media/E4VZkLvVgAQC5GU.jpg" style="width:150px; height:auto;" alt="김근호"></td>
       <td><img src="https://upload3.inven.co.kr/upload/2023/12/17/bbs/i15552721117.jpg" style="width:150px; height:auto;" alt="김동은"></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW3TaT-mMeBtq8Lg4v0xeqEa7jj0Vf9RBPg&s" style="width:150px; height:auto;" alt="김두현"></td>
-      <td><img width="299" height="290" alt="김민지" src="https://github.com/user-attachments/assets/27d5a45a-7632-462f-9be2-b777ce48b9bb" /></td>
+      <td><img width="299" height="290" alt="Image" src="https://github.com/user-attachments/assets/27d5a45a-7632-462f-9be2-b777ce48b9bb" /> alt="김민지"></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpP7-Z-u3mQZnX2RveC1-VGmAhwc5ASjDeIa7sOkqwHH0rQlTjthqCuaI58uZ8Ip2B&usqp=CAU" style="width:150px; height:auto;" alt="오현영"></td>
       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpP7-Z-u3mQZnX2RveC1-VGmAhwc5ASjDeIa7sOkqwHH0rQlTjthqCuaI58uZ8Ip2B&usqp=CAU" style="width:150px; height:auto;" alt="전지성"></td>
     </tr>
@@ -85,16 +85,22 @@
 <div> 
   FrontEnd : 
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><br>
+  <img src="https://img.shields.io/badge/streamlit-ff4B4B?style=for-the-badge&logo=streamlit&logoColor=white"><br>
+  
 
   BackEnd : 
-  <img src="https://img.shields.io/badge/FAST API-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><br>
 
   API : 
   <img src="https://img.shields.io/badge/OpenAI API-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/googlecloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white">
   <br>
 
   기타 : 
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white">
+  <img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+  
 </div>
 
 
