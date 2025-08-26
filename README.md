@@ -454,7 +454,8 @@ run_all.bat
 
 **macOS/Linux에서 한 번에 모든 앱 실행:**
 ```bash
-./run_all.sh
+chmod +x run_all.sh
+source venv/bin/activate && ./run_all.sh
 ```
 
 이 명령어를 실행하면:
@@ -673,6 +674,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ## 📝 라이선스
 
 이 프로젝트는 교육 목적으로 제작되었습니다.
+
 
 
 
