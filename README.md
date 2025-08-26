@@ -206,155 +206,6 @@ AI가 배제가 아닌 포용을 위한 기술이라는 사회적 메시지 전�
 <br>
 
 # 🔗 [기술적인 부분](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/2.-%EA%B8%B0%EC%88%A0%EC%A0%81%EC%9D%B8-%EB%B6%80%EB%B6%84)
-적용한 기술들을 설명하고 있습니다 (수정예정)
-
-<br>
-
-# 🔗 [프로젝트 문서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/3.-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AC%B8%EC%84%9C)
-
-### 필수 문서
-<details>
-  <summary>프로젝트 기획서</summary>
-
-[프로젝트 기획안](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/1.%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%ED%9A%8D%EC%95%88.docx)
-
-</details>
-
-<details>
-  <summary>발표 자료</summary>
-
-[요구사항 정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/2.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.docx)
-
-</details>
-
-<details>
-  <summary>프로젝트 보고서</summary>
-
-[WBS](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/3.%20WBS%20.xlsx)
-![image](https://github.com/user-attachments/assets/a18d61b7-0633-4731-882a-0be128a50070)
-
-</details>
-
-
-### 보조 문서
-
-
-<details>
-  <summary>메뉴 구조도</summary>
-
-[메뉴 구조도](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%EB%B3%B4%EC%A1%B0)/%EB%A9%94%EB%89%B4%20%EA%B5%AC%EC%A1%B0%EB%8F%84.xlsx)
-
-![image](https://github.com/user-attachments/assets/2d50c927-b192-4e89-b8e5-6abb158410d4)
-![image](https://github.com/user-attachments/assets/3fad068e-0a22-4336-b01f-63516a32c1de)
-![image](https://github.com/user-attachments/assets/5c1ea7d5-2532-476c-92c5-8795c59e68ae)
-
-</details>
-
-<details>
-  <summary>테이블 명세서</summary>
-
-[테이블 명세서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%EB%B3%B4%EC%A1%B0)/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EB%AA%85%EC%84%B8%EC%84%9C.xlsx)
-
-![image](https://github.com/user-attachments/assets/fbe25ad6-12a0-458e-90bb-ee645d4329f6)
-
-</details>
-
-<details>
-  <summary>API 명세서</summary>
-
-[API 명세서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%EB%B3%B4%EC%A1%B0)/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EB%AA%85%EC%84%B8%EC%84%9C.xlsx)
-
-![image](https://github.com/user-attachments/assets/a62c7be5-d1b9-43a2-80fc-0f4983eabc5d)
-![image](https://github.com/user-attachments/assets/c32c00f5-d16d-48c5-af77-976d7d42a7e1)
-
-</details>
-
-
-
-<br>
-
-# 🔗 [CI/CD](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/4.-CI-CD)
-
-
-<details>
-  <summary>전체 아키텍처</summary>
-  
-![image](https://github.com/user-attachments/assets/fa19354a-4210-4a2a-8077-5de4d32b2ed7)
-
-</details>
-<details>
-  <summary>자동 크롤링 </summary>
-  
-![image](https://github.com/user-attachments/assets/26cbdbdb-3b7a-4f4e-a7d5-79baf86b9392)
-
-
-</details>
-<details>
-  <summary>자동 배포 </summary>
-  
-![image](https://github.com/user-attachments/assets/b131e974-e552-42ea-9756-bf2c9d8efbdc)
-
-
-</details>
-
-
-
-<br>
-
-# 🔗 [UI](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/5.-UI)
-
-<details>
-  <summary>시연영상</summary>
-
-  <a href="https://www.youtube.com/watch?v=F4uLerXovjk" target="_blank">
-    <img src="https://img.youtube.com/vi/F4uLerXovjk/0.jpg" alt="시연영상">
-  </a>
-
-</details>
-
-<br>
-
-</div>
-
-# <div> 소감 </div>
-<div>
-<h3>김근호</h3>
-<p> 이번 프로젝트는 '디지털 소외 계층을 돕는다'는 의미 있는 목표 덕분에 개발 과정 내내 보람을 느낄 수 있었습니다. 기술적으로는 GitHub를 이용한 협업, 터미널, API 키 관리, Streamlit을 활용하여 배웠던 개발 기술들을 직접 경험하는 값진 시간이었습니다. 기술적 성장, 다양한 경험과 개발의 동기를 함께 얻은 좋은 경험이었습니다.
-</p>
-<br>
-<h3>김동은</h3>
-<p>
-</p>
-<br>
-
-
-<h3>김두현</h3>
-<p>
-</p>
-<br>
-
-
-<h3>김민지</h3>
-<p> 
-</p>
-<br>
-
-
-<h3>전지성</h3>
-<p>
-</p>
-<br>
-
-
-<h3>오현영</h3>
-<p> </p>
-<br>
-</div>
-
-# 통합 키오스크 프로젝트
-
-이 프로젝트는 AI 얼굴 인식, 일반 키오스크, 음성 주문 키오스크를 통합한 완전한 키오스크 시스템입니다.
-
 ## 📁 프로젝트 구조
 
 ```
@@ -484,6 +335,117 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 ### 포트 충돌
 - 다른 포트 사용: `--server.port 8504` 등으로 변경
 - 백그라운드 앱 접속: 브라우저에서 `http://localhost:8502` 또는 `http://localhost:8503` 직접 접속
+
+<br>
+
+# 🔗 [프로젝트 문서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/3.-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AC%B8%EC%84%9C)
+
+### 필수 문서
+<details>
+  <summary>프로젝트 기획서</summary>
+
+[프로젝트 기획안](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/1.%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B8%B0%ED%9A%8D%EC%95%88.docx)
+
+</details>
+
+<details>
+  <summary>발표 자료</summary>
+
+[요구사항 정의서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/2.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.docx)
+
+</details>
+
+<details>
+  <summary>프로젝트 보고서</summary>
+
+[WBS](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%ED%95%84%EC%88%98)/3.%20WBS%20.xlsx)
+![image](https://github.com/user-attachments/assets/a18d61b7-0633-4731-882a-0be128a50070)
+
+</details>
+
+
+### 보조 문서
+
+
+<details>
+  <summary>메뉴 구조도</summary>
+
+[메뉴 구조도](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/raw/refs/heads/main/%EC%B5%9C%EC%A2%85%20%EC%82%B0%EC%B6%9C%EB%AC%BC%20(%EB%B3%B4%EC%A1%B0)/%EB%A9%94%EB%89%B4%20%EA%B5%AC%EC%A1%B0%EB%8F%84.xlsx)
+
+![image](https://github.com/user-attachments/assets/2d50c927-b192-4e89-b8e5-6abb158410d4)
+![image](https://github.com/user-attachments/assets/3fad068e-0a22-4336-b01f-63516a32c1de)
+![image](https://github.com/user-attachments/assets/5c1ea7d5-2532-476c-92c5-8795c59e68ae)
+
+</details>
+
+
+<br>
+
+# 🔗 [CI/CD](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/4.-CI-CD)
+
+
+<details>
+  <summary>전체 아키텍처</summary>
+  
+![image](https://github.com/user-attachments/assets/fa19354a-4210-4a2a-8077-5de4d32b2ed7)
+
+</details>
+<details>
+  <summary>자동 크롤링 </summary>
+  
+![image](https://github.com/user-attachments/assets/26cbdbdb-3b7a-4f4e-a7d5-79baf86b9392)
+
+
+</details>
+<details>
+  <summary>자동 배포 </summary>
+  
+![image](https://github.com/user-attachments/assets/b131e974-e552-42ea-9756-bf2c9d8efbdc)
+
+
+</details>
+
+
+<br>
+
+</div>
+
+# <div> 소감 </div>
+<div>
+<h3>김근호</h3>
+<p> 이번 프로젝트는 '디지털 소외 계층을 돕는다'는 의미 있는 목표 덕분에 개발 과정 내내 보람을 느낄 수 있었습니다. 기술적으로는 GitHub를 이용한 협업, 터미널, API 키 관리, Streamlit을 활용하여 배웠던 개발 기술들을 직접 경험하는 값진 시간이었습니다. 기술적 성장, 다양한 경험과 개발의 동기를 함께 얻은 좋은 경험이었습니다.
+</p>
+<br>
+
+<h3>김동은</h3>
+<p>
+</p>
+<br>
+
+
+<h3>김두현</h3>
+<p>
+</p>
+<br>
+
+
+<h3>김민지</h3>
+<p> 
+</p>
+<br>
+
+
+<h3>전지성</h3>
+<p>
+</p>
+<br>
+
+
+<h3>오현영</h3>
+<p> </p>
+<br>
+</div>
+
 
 
 
