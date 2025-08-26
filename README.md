@@ -335,35 +335,6 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 
 </details>
 
-<br>
-
-# 🔗 [CI/CD](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/4.-CI-CD)
-
-
-<details>
-  <summary>전체 아키텍처</summary>
-  
-![image](https://github.com/user-attachments/assets/fa19354a-4210-4a2a-8077-5de4d32b2ed7)
-
-</details>
-<details>
-  <summary>자동 크롤링 </summary>
-  
-![image](https://github.com/user-attachments/assets/26cbdbdb-3b7a-4f4e-a7d5-79baf86b9392)
-
-
-</details>
-<details>
-  <summary>자동 배포 </summary>
-  
-![image](https://github.com/user-attachments/assets/b131e974-e552-42ea-9756-bf2c9d8efbdc)
-
-
-</details>
-
-
-<br>
-
 </div>
 
 # <div> 소감 </div>
@@ -397,6 +368,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 <h3>오현영</h3>
 <p>프로젝트를 진행하면서 LLM과 LangChain을 직접 활용해볼 수 있어 의미 있는 경험이었습니다. 다만, 짧은 기간으로 인해 프론트엔드와 백엔드를 완전히 연동하지 못한 점은 아쉬움으로 남습니다.</p>
 <br>
+
 
 
 
