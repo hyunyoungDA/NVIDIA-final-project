@@ -21,9 +21,14 @@ export async function POST(req: NextRequest) {
 // Face++ API 호출 함수
 async function callFacePlusPlusAPI(imageBase64: string, frameCount: number = 0): Promise<any> {
   try {
-    // Face++ API 설정
-    const API_KEY = 'HQgLEqAYNg3XwAuQpNsTyURI1IpDIrFF'
-    const API_SECRET = 'OalyEyxRci--MXV2mjAKM5hLrcKb3GwS'
+    // 환경 변수에서 Face++ API 설정 가져오기
+    const API_KEY = process.env.FACE_API_KEY
+    const API_SECRET = process.env.FACE_API_SECRET
+    
+    if (!API_KEY || !API_SECRET) {
+      throw new Error("Face++ API 키가 설정되지 않았습니다. .env 파일을 확인하세요.")
+    }
+    
     const API_URL = 'https://api-us.faceplusplus.com/facepp/v3/detect'
     
     // Base64 이미지 데이터 준비 (data:image/jpeg;base64, 부분 제거)

@@ -8,9 +8,15 @@ from io import BytesIO
 from PIL import Image
 import webbrowser
 import threading
+import os
+from dotenv import load_dotenv
 
-API_ENDPOINT = "http://localhost:3001/api/face"  # 포트를 3001로 변경
-TARGET_URL = "https://www.naver.com"
+# .env 파일 로드
+load_dotenv()
+
+# 환경 변수에서 설정 가져오기
+API_ENDPOINT = os.getenv("API_ENDPOINT", "http://localhost:3001/api/face")
+TARGET_URL = os.getenv("TARGET_URL", "https://www.naver.com")
 
 # 페이지 설정
 st.set_page_config(
