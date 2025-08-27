@@ -317,9 +317,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 - 백그라운드 앱 접속: 브라우저에서 `http://localhost:8502` 또는 `http://localhost:8503` 직접 접속
 
 <br>
-### 구현 영상
-![Image](https://github.com/user-attachments/assets/6340bfc1-bf1f-4b8d-84e4-f7ab7abaa87a)
-<br>
+
 
 # 🔗 [프로젝트 문서](https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI/wiki/3.-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AC%B8%EC%84%9C)
 
@@ -371,6 +369,7 @@ streamlit run 03_voice_kiosk_app.py --server.port 8503
 <h3>오현영</h3>
 <p>프로젝트를 진행하면서 LLM과 LangChain을 직접 활용해볼 수 있어 의미 있는 경험이었습니다. 다만, 짧은 기간으로 인해 프론트엔드와 백엔드를 완전히 연동하지 못한 점은 아쉬움으로 남습니다.</p>
 <br>
+
 
 
 
